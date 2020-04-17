@@ -1,0 +1,9 @@
+// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
+@import "variables";
+@import "normalize";
+@import "fonts";
+@import "swiper";
+// Подключение своих SCSS файлов
+@import "my";
+@import "media";
+

@@ -1,0 +1,111 @@
+//Colors
+$headings_h1: #553E29;
+$main-text: #5A5A5A;
+$form: #000000;
+$headings_h2: #000000;
+$figures_color: #F0BF36;
+$figures2: #F8F8F8;
+$headings_select: #F8F8F8;
+$comments_bg: #EFEFEF;
+$buttons: #6AA13C;
+$accent: #689038;
+
+// fonts
+
+$MainFont: 'Open Sans', sans-serif;
+$SecondFont: 'Helvetica Neue Cyr Medium', 'sans-serif';
+
+//Tittles
+
+@mixin heading_h1() {
+  font-family: $SecondFont;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 135%;
+  color: $headings_h1;
+  letter-spacing: 0.02em;
+}
+@mixin heading_h2() {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+}
+@mixin heading_h3() {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+@mixin heading_h4() {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+// TEXT
+
+@mixin text20reg() {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 175%;
+  letter-spacing: 0.02em;
+  color: $main-text;
+}
+@mixin text18reg() {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 175%;
+  letter-spacing: 0.02em;
+  color: $main-text;
+}
+
+.text18 {
+  @include text18reg;
+}
+
+.text20 {
+  @include text20reg;
+}
+
+// BUTTONS
+
+@mixin buttons() {
+  font-family: $MainFont;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140.62%;
+}
+
+// MARGINS
+
+.mb75 {
+  margin-bottom: 75px;
+}
+
+.mb135 {
+  margin-bottom: 135px;
+}
+
+.mb150 {
+  margin-bottom: 150px;
+}
+
+// OTHER
+.bold {
+  font-weight: bold;
+}
+.br35 {
+  border-radius: 35px;
+}
+.br25 {
+  border-radius: 25px;
+}
+.circle {
+  border-radius: 100%;
+}
+.button-text {
+  @include text20reg;
+}
+.accent {
+  color: $accent;
+}

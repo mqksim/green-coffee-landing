@@ -1,0 +1,51 @@
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr Medium';
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+  url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icons';
+  src:  url('../fonts/icons.eot?bqifd6');
+  src:  url('../fonts/icons.eot?bqifd6#iefix') format('embedded-opentype'),
+  url('../fonts/icons.ttf?bqifd6') format('truetype'),
+  url('../fonts/icons.woff?bqifd6') format('woff'),
+  url('../fonts/icons.svg?bqifd6#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook .path1:before {
+  content: "\e900";
+  color: rgb(206, 206, 206);
+}
+.icon-facebook .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-star:before {
+  content: "\e902";
+  color: #ffc107;
+}
